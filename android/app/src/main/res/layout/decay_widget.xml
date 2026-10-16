@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/decay_widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+
+    <View
+        android:id="@+id/decay_widget_field"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/decay_widget_field" />
+
+    <View
+        android:id="@+id/decay_widget_bloom"
+        android:layout_width="196dp"
+        android:layout_height="196dp"
+        android:layout_gravity="center"
+        android:background="@drawable/decay_widget_bloom" />
+
+    <View
+        android:id="@+id/decay_widget_core"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_gravity="center"
+        android:background="@drawable/decay_widget_core" />
+</FrameLayout>

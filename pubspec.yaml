@@ -1,0 +1,77 @@
+name: decay
+description: "A quiet, offline companion that slowly fades if forgotten — and leaves behind a Death Certificate when it passes."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Storage
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  path_provider: ^2.1.5
+  shared_preferences: ^2.5.3
+
+  # Notifications (gentle reminder)
+  flutter_local_notifications: ^19.4.0
+  timezone: ^0.10.0
+
+  # Sensors (presence ritual)
+  sensors_plus: ^7.1.1
+
+  # Audio (ambient piano)
+  audioplayers: ^6.1.0
+
+  # Home screen widget
+  home_widget: ^0.7.0
+
+  # Sharing the certificate image
+  share_plus: ^11.0.0
+
+  # Links (mailto, WhatsApp, website)
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/glow-bloom.png
+    - assets/images/glow-body.png
+    - assets/images/glow-core.png
+    - assets/images/cracks.png
+    - assets/audio/piano_full.wav
+    - assets/audio/ambient.wav
+
+  fonts:
+    - family: Fraunces
+      fonts:
+        - asset: assets/fonts/Fraunces-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Fraunces-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Fraunces-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Fraunces-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Fraunces-SemiBold.ttf
+          weight: 600
+    - family: SourceSans3
+      fonts:
+        - asset: assets/fonts/SourceSans3-Light.ttf
+          weight: 300
+        - asset: assets/fonts/SourceSans3-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/SourceSans3-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/SourceSans3-SemiBold.ttf
+          weight: 600
